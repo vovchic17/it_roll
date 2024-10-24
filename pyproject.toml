@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "it-roll"
+version = "0.1.0"
+description = ""
+authors = ["VoVcHiC <tsvetkovvova17@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+types-requests = "^2.32.0.20241016"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.7.0"
+mypy = "^1.13.0"
+
+[tool.ruff]
+line-length = 79
+indent-width = 4
+target-version = "py313"
+
+[tool.ruff.lint]
+ignore = [
+    "ANN101", # missing-type-self
+    "ANN102", # missing-type-cls
+    "D100",   # undocumented-public-module
+    "D104",   # undocumented-public-package
+    "D106",   # undocumented-public-nested-class
+    "D107",   # undocumented-public-init
+    "D203",   # one-blank-line-before-class
+    "D212",   # multi-line-summary-first-line
+    "T201",   # print
+]
+select = ["ALL"]
+fixable = ["ALL"]
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
