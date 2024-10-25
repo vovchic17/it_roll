@@ -10,6 +10,7 @@ readme = "README.md"
 python = "^3.12"
 requests = "^2.32.3"
 types-requests = "^2.32.0.20241016"
+aiohttp = "^3.10.10"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.7.0"
@@ -31,6 +32,7 @@ ignore = [
     "D203",   # one-blank-line-before-class
     "D212",   # multi-line-summary-first-line
     "T201",   # print
+    "RUF001", # ambiguous-unicode-character-string
 ]
 select = ["ALL"]
 fixable = ["ALL"]
