@@ -18,7 +18,10 @@
   ```bash
   poetry install
   ```
-* Run
+* Run one of solutions
   ```bash
-  poetry run python challenge
+  poetry run python challenge_v1
+  ```
+  ```bash
+  poetry run python challenge_v2
   ```
